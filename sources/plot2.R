@@ -21,8 +21,8 @@ plot2 <- function() {
     data$Global_active_power <- as.numeric(data$Global_active_power)
     
     # Plot
-    Sys.setlocale("LC_TIME", "english") # Works only on Windows Systems! If your operating systems differs
-                                        # plese look up the corresponding locale for it.
+    Sys.setlocale("LC_TIME", "english") # Works only on Windows systems! If your operating system differs,
+                                        # please look up the corresponding locale for it.
     png(filename="plot2.png", width=480, height=480)
     plot(data$DateTime, data$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
     dev.off()

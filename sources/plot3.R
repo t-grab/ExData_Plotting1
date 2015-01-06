@@ -23,8 +23,8 @@ plot3 <- function() {
     data$Sub_metering_2 <- as.numeric(data$Sub_metering_2)
     
     # Plot
-    Sys.setlocale("LC_TIME", "english") # Works only on Windows Systems! If your operating systems differs
-                                        # plese look up the corresponding locale for it.
+    Sys.setlocale("LC_TIME", "english") # Works only on Windows Systems! If your operating system differs,
+                                        # please look up the corresponding locale for it.
     png(filename="plot3.png", width=480, height=480)
     plot(data$DateTime, data$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
     lines(data$DateTime, data$Sub_metering_2, col="red")
