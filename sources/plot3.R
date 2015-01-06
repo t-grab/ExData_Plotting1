@@ -22,8 +22,6 @@ plot3 <- function() {
     data$Sub_metering_2 <- as.character(data$Sub_metering_2)
     data$Sub_metering_2 <- as.numeric(data$Sub_metering_2)
     
-    data
-    
     # Plot
     Sys.setlocale("LC_TIME", "english") # Works only on Windows Systems! If your operating systems differs
                                         # plese look up the corresponding locale for it.
